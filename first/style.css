@@ -1,28 +1,51 @@
-.back {
-    background-color: rgb(18, 15, 15);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(18, 15, 15); /* Dark background color */
+    color: rgb(91, 68, 68); /* Text color */
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Parent container styles */
 .parent {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Add this to ensure the reset button stays within the parent */
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin-bottom: 20px; /* Space between welcome message and buttons */
+    flex-direction: column;
 }
 
-.button, .reset {
-    height: 10rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    border: 2px solid white; /* Add border styling */
+/* Welcome message styles */
+.welcome {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full width */
 }
 
+/* Color button styles */
+.button {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid white; /* White border */
+}
+
+/* Specific color styles */
 #box1 {
     background-color: aliceblue;
 }
@@ -39,7 +62,14 @@
     background-color: blue;
 }
 
+/* Reset button styles */
 .reset {
-    background-color: grey;
-    cursor: pointer; /* Add cursor pointer for better UX */
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid white; /* White border */
+}
+
+/* Hover effect for buttons */
+.button:hover, .reset:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
 }
