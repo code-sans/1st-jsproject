@@ -1,0 +1,45 @@
+.back {
+    background-color: rgb(18, 15, 15);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Add this to ensure the reset button stays within the parent */
+}
+
+.button, .reset {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border: 2px solid white; /* Add border styling */
+}
+
+#box1 {
+    background-color: aliceblue;
+}
+
+#box2 {
+    background-color: yellow;
+}
+
+#box3 {
+    background-color: red;
+}
+
+#box4 {
+    background-color: blue;
+}
+
+.reset {
+    background-color: grey;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
